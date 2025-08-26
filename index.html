@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Call Center Elevar - Servicios de Atención al Cliente en Garin, Misiones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brown': {
+              50: '#fdf8f6',
+              100: '#f2e8e5',
+              200: '#eaddd7',
+              300: '#e0cfc5',
+              400: '#d2bab0',
+              500: '#a0715a',
+              600: '#92664f',
+              700: '#7c5a47',
+              800: '#68493c',
+              900: '#553c32',
+              950: '#2d1f1a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom scrollbar */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    
+    /* Hero background with call center theme */
+    .hero-bg {
+      background-image: linear-gradient(rgba(45, 31, 26, 0.8), rgba(45, 31, 26, 0.8)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    
+    /* Professional card with brown theme */
+    .professional-card {
+      box-shadow: 0 15px 35px rgba(160, 113, 90, 0.2);
+      transition: all 0.4s ease;
+      border: 1px solid rgba(160, 113, 90, 0.3);
+    }
+    
+    .professional-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(160, 113, 90, 0.3);
+      border-color: rgba(160, 113, 90, 0.5);
+    }
+
+    /* Brown gradient text effect */
+    .gradient-text {
+      background: linear-gradient(135deg, #a0715a, #d2bab0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Animated brown border */
+    .animated-border {
+      position: relative;
+    }
+    
+    .animated-border::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: inherit;
+      padding: 2px;
+      background: linear-gradient(135deg, #a0715a, #d2bab0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+    }
+
+    /* Hexagon pattern background */
+    .hexagon-pattern {
+      background-image: radial-gradient(circle at 1px 1px, rgba(160, 113, 90, 0.1) 1px, transparent 0);
+      background-size: 20px 20px;
+    }
+  </style>
+</head>
+<body class="bg-brown-950 text-brown-100 font-sans leading-relaxed hexagon-pattern">
+
+  <!-- HEADER WITH HERO BACKGROUND -->
+  <header class="hero-bg text-white min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 py-20 w-full">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Logo y título principal -->
+        <div class="text-center lg:text-left">
+          <div class="mb-8">
+            <div class="inline-flex items-center justify-center w-24 h-24 bg-brown-500 rounded-full mb-6 shadow-2xl">
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <h1 class="text-6xl md:text-7xl font-black tracking-tight mb-4">
+              <span class="gradient-text">Call Center</span>
+              <br>
+              <span class="text-brown-200">Elevar</span>
+          </h1>
+            <p class="text-brown-200 italic text-2xl md:text-3xl mb-8 font-light">Elevamos tu experiencia de atención al cliente</p>
+          </div>
+          
+          <!-- Información de contacto destacada -->
+          <div class="bg-brown-900/50 backdrop-blur-lg p-8 rounded-2xl border border-brown-500/30 shadow-2xl">
+            <div class="grid gap-4 text-lg">
+              <div class="flex items-center space-x-4">
+                <div class="w-10 h-10 bg-brown-500 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <span class="text-brown-100">Concejal Larroca 656, Garin, Misiones</span>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-10 h-10 bg-brown-500 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                  </svg>
+                </div>
+                <span class="text-brown-100">callcenterelevar@gmail.com</span>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-10 h-10 bg-brown-500 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"/>
+                  </svg>
+                </div>
+                <span class="text-brown-100">CUIL: 27-48474032-7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navegación lateral -->
+        <div class="flex justify-center lg:justify-end">
+          <nav class="bg-brown-900/40 backdrop-blur-lg p-8 rounded-2xl border border-brown-500/30 shadow-2xl">
+            <ul class="space-y-6">
+              <li><a href="#empresa" class="block text-brown-200 hover:text-brown-400 transition duration-300 text-xl font-semibold hover:scale-105 transform px-4 py-2 rounded-lg hover:bg-brown-500/20">📊 La Empresa</a></li>
+              <li><a href="#servicios" class="block text-brown-200 hover:text-brown-400 transition duration-300 text-xl font-semibold hover:scale-105 transform px-4 py-2 rounded-lg hover:bg-brown-500/20">🎯 Servicios</a></li>
+              <li><a href="#trayectoria" class="block text-brown-200 hover:text-brown-400 transition duration-300 text-xl font-semibold hover:scale-105 transform px-4 py-2 rounded-lg hover:bg-brown-500/20">📈 Trayectoria</a></li>
+              <li><a href="#testimonios" class="block text-brown-200 hover:text-brown-400 transition duration-300 text-xl font-semibold hover:scale-105 transform px-4 py-2 rounded-lg hover:bg-brown-500/20">💬 Testimonios</a></li>
+          </ul>
+        </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 md:px-12 py-20 space-y-28">
+
+    <!-- LA EMPRESA -->
+    <section id="empresa" aria-labelledby="empresa-title" class="relative">
+      <!-- Decorative background pattern -->
+      <div class="absolute inset-0 bg-gradient-to-br from-brown-900/20 to-transparent rounded-3xl"></div>
+      
+      <div class="relative">
+        <div class="text-center mb-20">
+          <h2 id="empresa-title" class="text-5xl md:text-6xl font-bold mb-8 text-brown-100">
+            <span class="gradient-text">Nuestra Empresa</span>
+          </h2>
+          <div class="w-32 h-2 bg-gradient-to-r from-brown-500 to-brown-400 mx-auto rounded-full"></div>
+          <p class="text-2xl text-brown-300 mt-8 max-w-3xl mx-auto font-light">Especialistas en elevar la experiencia de atención al cliente</p>
+        </div>
+        
+        <div class="grid lg:grid-cols-3 gap-12 items-stretch mb-20">
+          <!-- Card 1: Misión -->
+          <div class="bg-gradient-to-br from-brown-900/60 to-brown-800/40 p-10 rounded-3xl professional-card animated-border">
+            <div class="text-center mb-8">
+              <div class="w-20 h-20 bg-brown-500 rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl">
+                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold text-brown-300 mb-6">Nuestra Misión</h3>
+            </div>
+            <p class="text-xl text-brown-100 leading-relaxed text-center">
+              Ser el call center líder en <strong class="text-brown-400">Garin, Misiones</strong>, proporcionando servicios de atención al cliente excepcionales que superen las expectativas y fortalezcan la relación entre nuestros clientes y sus usuarios finales.
+            </p>
+          </div>
+
+          <!-- Card 2: Visión -->
+          <div class="bg-gradient-to-br from-brown-900/60 to-brown-800/40 p-10 rounded-3xl professional-card animated-border">
+            <div class="text-center mb-8">
+              <div class="w-20 h-20 bg-brown-600 rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl">
+                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+        </div>
+              <h3 class="text-3xl font-bold text-brown-300 mb-6">Nuestra Visión</h3>
+      </div>
+            <p class="text-xl text-brown-100 leading-relaxed text-center">
+              Convertirnos en el referente regional en servicios de call center, expandiendo nuestra presencia a nivel nacional mientras mantenemos los más altos estándares de calidad y satisfacción del cliente.
+            </p>
+          </div>
+
+          <!-- Card 3: Valores -->
+          <div class="bg-gradient-to-br from-brown-900/60 to-brown-800/40 p-10 rounded-3xl professional-card animated-border">
+            <div class="text-center mb-8">
+              <div class="w-20 h-20 bg-brown-700 rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl">
+                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.5 8H16c-.8 0-1.5.7-1.5 1.5v9c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5V15h1v7h2z"/>
+                </svg>
+              </div>
+              <h3 class="text-3xl font-bold text-brown-300 mb-6">Nuestros Valores</h3>
+            </div>
+            <ul class="text-lg text-brown-100 space-y-3">
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Excelencia en el servicio</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Compromiso y responsabilidad</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Innovación tecnológica</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Respeto y empatía</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Info destacada -->
+        <div class="bg-gradient-to-r from-brown-800/60 to-brown-900/60 p-12 rounded-3xl professional-card animated-border">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+              <h3 class="text-4xl font-bold text-brown-300 mb-8">Call Center Elevar</h3>
+              <p class="text-xl text-brown-100 leading-relaxed mb-6">
+                <strong class="text-brown-400">Call Center Elevar</strong> nació con la misión de revolucionar la industria de atención al cliente en la región de Misiones. 
+                Ubicados estratégicamente en Garin, ofrecemos servicios especializados que conectan empresas con sus clientes de manera efectiva y profesional.
+              </p>
+              <p class="text-xl text-brown-100 leading-relaxed">
+                Con tecnología de vanguardia y un equipo humano altamente capacitado, nos comprometemos a elevar cada interacción, transformando 
+                cada llamada en una oportunidad de crear vínculos sólidos y duraderos.
+              </p>
+            </div>
+            <div class="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+                alt="Call center profesional" 
+                class="rounded-2xl shadow-2xl professional-card w-full h-80 object-cover"
+              />
+              <div class="absolute -bottom-6 -right-6 bg-gradient-to-r from-brown-500 to-brown-600 text-white px-8 py-4 rounded-xl shadow-xl">
+                <p class="font-bold text-lg">Atención 24/7</p>
+                <p class="text-sm">Siempre disponibles</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" aria-labelledby="servicios-title" class="relative">
+      <!-- Background pattern -->
+      <div class="absolute inset-0 bg-gradient-to-tr from-brown-900/10 to-transparent rounded-3xl"></div>
+      
+      <div class="relative">
+        <div class="text-center mb-20">
+          <h2 id="servicios-title" class="text-5xl md:text-6xl font-bold mb-8 text-brown-100">
+            <span class="gradient-text">Nuestros Servicios</span>
+          </h2>
+          <div class="w-32 h-2 bg-gradient-to-r from-brown-500 to-brown-400 mx-auto mb-10 rounded-full"></div>
+          <p class="text-2xl text-brown-300 max-w-4xl mx-auto font-light">Soluciones especializadas en atención al cliente que elevan tu negocio</p>
+        </div>
+        
+        <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3 max-w-7xl">
+          
+          <!-- Servicio 1: Atención Telefónica -->
+          <article class="bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+            <div class="text-center mb-8">
+              <div class="w-20 h-20 bg-brown-500 rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-brown-300 mb-4">Atención Telefónica</h3>
+            </div>
+            <p class="text-brown-200 mb-6 text-center leading-relaxed">Servicio profesional de atención telefónica 24/7 para mantener a tus clientes siempre conectados con tu empresa.</p>
+            <ul class="space-y-3 text-brown-100">
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Recepción de llamadas entrantes</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Gestión de consultas y reclamos</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Soporte técnico básico</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Registro detallado de interacciones</li>
+            </ul>
+          </article>
+
+          <!-- Servicio 2: Ventas Telefónicas -->
+          <article class="bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+          <div class="text-center mb-8">
+              <div class="w-20 h-20 bg-brown-600 rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M7 4V2C7 1.45 7.45 1 8 1S9 1.45 9 2V4H15V2C15 1.45 15.45 1 16 1S17 1.45 17 2V4H19C20.1 4 21 4.9 21 6V20C21 21.1 20.1 22 19 22H5C3.9 22 3 21.1 3 20V6C3 4.9 3.9 4 5 4H7ZM19 8H5V20H19V8ZM12 13L8 9H11V6H13V9H16L12 13Z"/>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-brown-300 mb-4">Ventas Telefónicas</h3>
+          </div>
+            <p class="text-brown-200 mb-6 text-center leading-relaxed">Incrementa tus ventas con nuestro equipo especializado en telemarketing y gestión comercial telefónica.</p>
+            <ul class="space-y-3 text-brown-100">
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-600 rounded-full mr-3"></span>Prospección de nuevos clientes</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-600 rounded-full mr-3"></span>Seguimiento de leads comerciales</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-600 rounded-full mr-3"></span>Cierre de ventas telefónicas</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-600 rounded-full mr-3"></span>Up-selling y cross-selling</li>
+          </ul>
+        </article>
+
+          <!-- Servicio 3: Soporte Técnico -->
+          <article class="bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+          <div class="text-center mb-8">
+              <div class="w-20 h-20 bg-brown-700 rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L13.09 8.26L22 9L17.22 13.78L18.18 22.5L12 19.27L5.82 22.5L6.78 13.78L2 9L10.91 8.26L12 2Z"/>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-brown-300 mb-4">Soporte Técnico</h3>
+          </div>
+            <p class="text-brown-200 mb-6 text-center leading-relaxed">Brindamos asistencia técnica especializada para resolver problemas y consultas de tus usuarios de manera eficiente.</p>
+            <ul class="space-y-3 text-brown-100">
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-700 rounded-full mr-3"></span>Resolución de incidencias técnicas</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-700 rounded-full mr-3"></span>Guía de instalación y configuración</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-700 rounded-full mr-3"></span>Troubleshooting avanzado</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-700 rounded-full mr-3"></span>Escalamiento a especialistas</li>
+          </ul>
+        </article>
+
+          <!-- Servicio 4: Encuestas y Estudios -->
+          <article class="bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+          <div class="text-center mb-8">
+              <div class="w-20 h-20 bg-brown-500 rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H17V17Z"/>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-brown-300 mb-4">Encuestas y Estudios</h3>
+          </div>
+            <p class="text-brown-200 mb-6 text-center leading-relaxed">Realizamos estudios de mercado y encuestas de satisfacción para obtener información valiosa sobre tu audiencia.</p>
+            <ul class="space-y-3 text-brown-100">
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Encuestas de satisfacción</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Estudios de mercado</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Investigación de opinión</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-500 rounded-full mr-3"></span>Análisis de resultados</li>
+          </ul>
+        </article>
+
+          <!-- Servicio 5: Cobranzas -->
+          <article class="bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+          <div class="text-center mb-8">
+              <div class="w-20 h-20 bg-brown-600 rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20ZM12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z"/>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-brown-300 mb-4">Gestión de Cobranzas</h3>
+          </div>
+            <p class="text-brown-200 mb-6 text-center leading-relaxed">Servicio profesional de gestión de cobranzas con enfoque en la recuperación efectiva y el mantenimiento de relaciones.</p>
+            <ul class="space-y-3 text-brown-100">
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-600 rounded-full mr-3"></span>Recordatorios de vencimientos</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-600 rounded-full mr-3"></span>Negociación de planes de pago</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-600 rounded-full mr-3"></span>Seguimiento de morosos</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-600 rounded-full mr-3"></span>Reportes de gestión</li>
+          </ul>
+        </article>
+
+          <!-- Servicio 6: Agenda de Citas -->
+          <article class="bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+          <div class="text-center mb-8">
+              <div class="w-20 h-20 bg-brown-700 rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 3H18V1H16V3H8V1H6V3H5C3.89 3 3.01 3.9 3.01 5L3 19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V8H19V19ZM7 10H12V15H7V10Z"/>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-brown-300 mb-4">Agenda de Citas</h3>
+          </div>
+            <p class="text-brown-200 mb-6 text-center leading-relaxed">Gestión profesional de agendas y coordinación de citas para optimizar los calendarios de tu empresa.</p>
+            <ul class="space-y-3 text-brown-100">
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-700 rounded-full mr-3"></span>Coordinación de horarios</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-700 rounded-full mr-3"></span>Confirmación de citas</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-700 rounded-full mr-3"></span>Reprogramación automática</li>
+              <li class="flex items-center"><span class="w-2 h-2 bg-brown-700 rounded-full mr-3"></span>Recordatorios preventivos</li>
+          </ul>
+        </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAYECTORIA -->
+    <section id="trayectoria" aria-labelledby="trayectoria-title" class="relative max-w-6xl mx-auto">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 bg-gradient-to-bl from-brown-900/15 to-transparent rounded-3xl"></div>
+      
+      <div class="relative">
+      <div class="text-center mb-20">
+          <h2 id="trayectoria-title" class="text-5xl md:text-6xl font-bold mb-8 text-brown-100">
+            <span class="gradient-text">Nuestra Trayectoria</span>
+        </h2>
+          <div class="w-32 h-2 bg-gradient-to-r from-brown-500 to-brown-400 mx-auto mb-10 rounded-full"></div>
+          <p class="text-2xl text-brown-300 max-w-3xl mx-auto font-light">El camino hacia la excelencia en atención al cliente</p>
+      </div>
+      
+        <div class="bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-12 shadow-2xl professional-card animated-border">
+          <div class="space-y-16">
+            <div class="flex items-start space-x-8 group">
+              <div class="bg-gradient-to-r from-brown-500 to-brown-600 text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-xl flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform duration-300">2022</div>
+              <div class="flex-1">
+                <h3 class="text-3xl font-bold text-brown-300 mb-4 group-hover:text-brown-200 transition-colors">Fundación de Call Center Elevar</h3>
+                <p class="text-brown-100 text-xl leading-relaxed">Call Center Elevar nació en Garin, Misiones, con la misión de brindar servicios de atención al cliente de alta calidad, combinando tecnología moderna con el toque humano característico de nuestra región.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-8 group">
+              <div class="bg-gradient-to-r from-brown-600 to-brown-700 text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-xl flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform duration-300">2023</div>
+              <div class="flex-1">
+                <h3 class="text-3xl font-bold text-brown-300 mb-4 group-hover:text-brown-200 transition-colors">Expansión de Servicios Especializados</h3>
+                <p class="text-brown-100 text-xl leading-relaxed">Incorporamos servicios especializados como ventas telefónicas, soporte técnico y gestión de cobranzas, consolidando nuestra posición como referente regional en servicios de call center integral.</p>
+            </div>
+          </div>
+          
+            <div class="flex items-start space-x-8 group">
+              <div class="bg-gradient-to-r from-brown-500 to-brown-600 text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-xl flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform duration-300">2024</div>
+              <div class="flex-1">
+                <h3 class="text-3xl font-bold text-brown-300 mb-4 group-hover:text-brown-200 transition-colors">Implementación Tecnológica Avanzada</h3>
+                <p class="text-brown-100 text-xl leading-relaxed">Inversión en tecnología de vanguardia y capacitación continua del equipo, logrando un 95% de satisfacción del cliente y estableciendo servicio 24/7 para todas nuestras líneas de negocio.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-8 group">
+              <div class="bg-gradient-to-r from-brown-600 to-brown-700 text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-xl flex-shrink-0 shadow-xl group-hover:scale-110 transition-transform duration-300">2025</div>
+              <div class="flex-1">
+                <h3 class="text-3xl font-bold text-brown-300 mb-4 group-hover:text-brown-200 transition-colors">Proyección Nacional</h3>
+                <p class="text-brown-100 text-xl leading-relaxed">Planificamos nuestra expansión a nivel nacional, manteniendo nuestros valores de calidad y cercanía, con el objetivo de convertirnos en el call center de referencia en Argentina.</p>
+          </div>
+            </div>
+          </div>
+          
+          <!-- Estadísticas destacadas -->
+          <div class="mt-16 pt-12 border-t border-brown-500/30">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+              <div class="bg-brown-800/40 p-8 rounded-2xl">
+                <div class="text-4xl font-bold text-brown-400 mb-2">24/7</div>
+                <div class="text-brown-200 text-lg">Disponibilidad</div>
+              </div>
+              <div class="bg-brown-800/40 p-8 rounded-2xl">
+                <div class="text-4xl font-bold text-brown-400 mb-2">95%</div>
+                <div class="text-brown-200 text-lg">Satisfacción</div>
+              </div>
+              <div class="bg-brown-800/40 p-8 rounded-2xl">
+                <div class="text-4xl font-bold text-brown-400 mb-2">+1000</div>
+                <div class="text-brown-200 text-lg">Llamadas/día</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" aria-labelledby="testimonios-title" class="relative">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 bg-gradient-to-tr from-brown-900/10 to-transparent rounded-3xl"></div>
+      
+      <div class="relative">
+        <div class="text-center mb-20">
+          <h2 id="testimonios-title" class="text-5xl md:text-6xl font-bold mb-8 text-brown-100">
+            <span class="gradient-text">Testimonios</span>
+          </h2>
+          <div class="w-32 h-2 bg-gradient-to-r from-brown-500 to-brown-400 mx-auto mb-10 rounded-full"></div>
+          <p class="text-2xl text-brown-300 max-w-4xl mx-auto font-light">La satisfacción de nuestros clientes es nuestro mayor logro</p>
+        </div>
+        
+        <div class="flex space-x-8 overflow-x-auto scrollbar-hide max-w-7xl px-6 md:px-0 py-6">
+
+          <article class="min-w-[380px] md:min-w-[420px] bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+            <div class="flex items-start space-x-6 mb-8">
+              <img 
+                class="w-20 h-20 rounded-full border-4 border-brown-500 flex-shrink-0 object-cover group-hover:scale-110 transition-transform duration-300" 
+                src="https://randomuser.me/api/portraits/women/32.jpg" 
+                alt="Foto de María González"
+                loading="lazy"
+              />
+              <div>
+                <h4 class="font-bold text-brown-300 text-xl">María González</h4>
+                <p class="text-brown-400 text-base font-semibold">Gerente de Atención al Cliente</p>
+                <p class="text-brown-200 text-sm">TechSolutions S.A.</p>
+              </div>
+            </div>
+            <p class="italic text-brown-100 text-lg leading-relaxed">"Call Center Elevar transformó completamente nuestra atención al cliente. La profesionalidad y eficiencia de su equipo superó todas nuestras expectativas."</p>
+          </article>
+
+          <article class="min-w-[380px] md:min-w-[420px] bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+            <div class="flex items-start space-x-6 mb-8">
+              <img 
+                class="w-20 h-20 rounded-full border-4 border-brown-600 flex-shrink-0 object-cover group-hover:scale-110 transition-transform duration-300" 
+                src="https://randomuser.me/api/portraits/men/45.jpg" 
+                alt="Foto de Carlos Mendoza"
+                loading="lazy"
+              />
+              <div>
+                <h4 class="font-bold text-brown-300 text-xl">Carlos Mendoza</h4>
+                <p class="text-brown-400 text-base font-semibold">Director Comercial</p>
+                <p class="text-brown-200 text-sm">MisionesRural Corp.</p>
+              </div>
+            </div>
+            <p class="italic text-brown-100 text-lg leading-relaxed">"Su servicio de ventas telefónicas incrementó nuestras conversiones en un 40%. Recomiendo Call Center Elevar sin dudarlo."</p>
+          </article>
+
+          <article class="min-w-[380px] md:min-w-[420px] bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+            <div class="flex items-start space-x-6 mb-8">
+              <img 
+                class="w-20 h-20 rounded-full border-4 border-brown-500 flex-shrink-0 object-cover group-hover:scale-110 transition-transform duration-300" 
+                src="https://randomuser.me/api/portraits/women/28.jpg" 
+                alt="Foto de Ana Rodríguez"
+                loading="lazy"
+              />
+              <div>
+                <h4 class="font-bold text-brown-300 text-xl">Ana Rodríguez</h4>
+                <p class="text-brown-400 text-base font-semibold">Coordinadora de IT</p>
+                <p class="text-brown-200 text-sm">InnovaTech Garin</p>
+              </div>
+            </div>
+            <p class="italic text-brown-100 text-lg leading-relaxed">"El soporte técnico que brindan es excepcional. Resuelven cualquier consulta con rapidez y conocimiento técnico impresionante."</p>
+          </article>
+
+          <article class="min-w-[380px] md:min-w-[420px] bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+            <div class="flex items-start space-x-6 mb-8">
+              <img 
+                class="w-20 h-20 rounded-full border-4 border-brown-600 flex-shrink-0 object-cover group-hover:scale-110 transition-transform duration-300" 
+                src="https://randomuser.me/api/portraits/men/52.jpg" 
+                alt="Foto de Roberto Silva"
+                loading="lazy"
+              />
+              <div>
+                <h4 class="font-bold text-brown-300 text-xl">Roberto Silva</h4>
+                <p class="text-brown-400 text-base font-semibold">Gerente Financiero</p>
+                <p class="text-brown-200 text-sm">Constructora Norte</p>
+              </div>
+            </div>
+            <p class="italic text-brown-100 text-lg leading-relaxed">"Su gestión de cobranzas es profesional y efectiva. Lograron recuperar cuentas que considerábamos perdidas, manteniendo siempre la cordialidad."</p>
+          </article>
+
+          <article class="min-w-[380px] md:min-w-[420px] bg-gradient-to-br from-brown-900/60 to-brown-800/40 rounded-3xl p-10 shadow-2xl professional-card animated-border group">
+            <div class="flex items-start space-x-6 mb-8">
+              <img 
+                class="w-20 h-20 rounded-full border-4 border-brown-500 flex-shrink-0 object-cover group-hover:scale-110 transition-transform duration-300" 
+                src="https://randomuser.me/api/portraits/women/35.jpg" 
+                alt="Foto de Patricia López"
+                loading="lazy"
+              />
+            <div>
+                <h4 class="font-bold text-brown-300 text-xl">Patricia López</h4>
+                <p class="text-brown-400 text-base font-semibold">Directora de Marketing</p>
+                <p class="text-brown-200 text-sm">AgriMisiones</p>
+              </div>
+            </div>
+            <p class="italic text-brown-100 text-lg leading-relaxed">"Las encuestas y estudios que realizan nos proporcionan información valiosa sobre nuestros clientes. Su análisis es detallado y muy útil."</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gradient-to-br from-brown-900 to-brown-950 text-white py-20 mt-28">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid md:grid-cols-3 gap-12 mb-16">
+        <div>
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-brown-500 rounded-full flex items-center justify-center mr-4">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <h3 class="text-3xl font-bold text-brown-400">Call Center Elevar</h3>
+          </div>
+          <p class="text-brown-200 mb-6 text-lg leading-relaxed">Elevamos la experiencia de atención al cliente con servicios profesionales desde Garin, Misiones, conectando empresas con sus clientes las 24 horas del día.</p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-brown-400 hover:text-brown-300 transition duration-300 hover:scale-110 transform">
+              <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+            </a>
+            <a href="#" class="text-brown-500 hover:text-brown-400 transition duration-300 hover:scale-110 transform">
+              <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+            </a>
+            <a href="#" class="text-brown-400 hover:text-brown-300 transition duration-300 hover:scale-110 transform">
+              <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-2xl font-bold text-brown-400 mb-6">Información de Contacto</h4>
+          <div class="space-y-4 text-brown-200 text-lg">
+            <div class="flex items-center space-x-4">
+              <svg class="w-6 h-6 text-brown-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+              <span>Concejal Larroca 656, Garin, Misiones</span>
+            </div>
+            <div class="flex items-center space-x-4">
+              <svg class="w-6 h-6 text-brown-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+              <a href="mailto:callcenterelevar@gmail.com" class="hover:text-brown-400 transition">callcenterelevar@gmail.com</a>
+            </div>
+            <div class="flex items-center space-x-4">
+              <svg class="w-6 h-6 text-brown-500" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+              <span>CUIL: 27-48474032-7</span>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-2xl font-bold text-brown-400 mb-6">Horarios de Atención</h4>
+          <div class="space-y-3 text-brown-200 text-lg">
+            <p><strong class="text-brown-300">Atención 24/7:</strong> Disponible</p>
+            <p><strong class="text-brown-400">Administración:</strong> Lun-Vie 8:00-17:00</p>
+            <p><strong class="text-brown-500">Urgencias:</strong> Siempre disponible</p>
+          </div>
+          
+          <!-- Servicios destacados -->
+          <div class="mt-8 p-4 bg-brown-800/40 rounded-xl border border-brown-500/30">
+            <h5 class="text-lg font-bold text-brown-300 mb-3">Servicios Principales</h5>
+            <div class="grid grid-cols-2 gap-2 text-sm text-brown-200">
+              <span>• Atención telefónica</span>
+              <span>• Ventas telefónicas</span>
+              <span>• Soporte técnico</span>
+              <span>• Gestión cobranzas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-brown-500/30 pt-10 text-center">
+        <p class="text-brown-400 mb-3 text-lg font-semibold">Call Center Elevar - CUIL 27-48474032-7</p>
+        <p class="text-brown-300">© 2024 Todos los derechos reservados | Concejal Larroca 656, Garin, Misiones</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
